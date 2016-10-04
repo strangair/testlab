@@ -1,9 +1,7 @@
+# coding: utf-8
+
 from django.http import Http404, HttpResponse
 import datetime
-
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 def hello(request):
     return HttpResponse('Hello world')
