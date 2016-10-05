@@ -1,5 +1,6 @@
 # coding: utf-8
 
+from django.http import Http404, HttpResponse
 from django.shortcuts import render, render_to_response
 
 # Create your views here.
