@@ -16,5 +16,4 @@ def search(request):
         books = Book.objects.filter(title__icontains=q)
         return render_to_response('search_results.html', {'books': books, 'query': q})
     else:
-        message = 'Вы отправили пустую форму.'
-    return HttpResponse(message)
+        return render_to_response('search_form.html', {'error': True})
