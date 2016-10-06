@@ -3,7 +3,7 @@
 from django.http import Http404, HttpResponse
 from django.shortcuts import render, render_to_response
 
-from mysite.books.models import Book
+from books.models import Book
 
 # Create your views here.
 
